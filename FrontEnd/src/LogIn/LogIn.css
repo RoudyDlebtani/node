@@ -1,0 +1,26 @@
+.LogInBox{
+    background-color: white;
+}
+body{
+    background-color: blue;
+}
+.LogInContainer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:832px;
+  
+}
+.LogInCreat{
+    background-color:green !important;
+    color: white !important;;
+    float: right;
+    margin:16px !important;
+}
+
+.gridAlignCenter{
+    display:flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  
+}
