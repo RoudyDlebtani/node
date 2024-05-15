@@ -1,0 +1,10 @@
+.StudentCompButton{
+    background-color: green !important;
+    color: white !important;
+}
+
+
+.StudentCompTextField{
+width: 100%;
+margin-bottom: 16px !important;
+}

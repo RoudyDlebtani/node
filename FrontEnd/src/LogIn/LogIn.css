@@ -1,15 +1,17 @@
 .LogInBox{
     background-color: white;
+    width: 100%;
+    padding: 16px !important;
 }
 body{
     background-color: blue;
 }
 .LogInContainer{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     height:832px;
-  
+
 }
 .LogInCreat{
     background-color:green !important;
@@ -24,3 +26,9 @@ body{
     justify-content: center !important;
   
 }
+
+.LinksType{
+    text-decoration: none !important;
+   margin-left: 8px !important;
+}
+
