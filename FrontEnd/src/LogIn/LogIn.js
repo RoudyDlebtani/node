@@ -32,7 +32,7 @@ function LogIn() {
                         <Box><Typography fontWeight="bold">Email</Typography></Box>
                     </Grid>
                     <Grid item xs={5} className="gridAlignCenter">
-                        <Box><Typography fontWeight="bold">Action</Typography><AddEditDelete /></Box>
+                        <Box><Typography fontWeight="bold">Action</Typography></Box>
                     </Grid>
                 </Grid>
                 {students.map((student, index) => (

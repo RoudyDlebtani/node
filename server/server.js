@@ -4,7 +4,7 @@ import mysql2 from 'mysql2';
 
 const app = express();
 app.use(cors());
-
+app.use(express.json());
 app.listen(3001, () => {
     console.log("Server is listening on port 3001");
 });
@@ -35,13 +35,14 @@ app.get('/', (req, res) => {
     });
 });
 
-app.get('/add-Student',(req,res)=>{
-  const addStudent ="Insert Into students Values"(req.Name+ req.Email);
-
-  db.query(addStudent, (err, result) => {
+app.post('/add-Student', (req, res) => {
+  const Name = req.body.name;
+  const Email = req.body.name;
+  const sql = `INSERT INTO students (EmpName, EmpEmail) VALUES ("${Name}" , "${Email}");`;
+  db.query(sql, (err, result) => {
     if (err) {
-        return res.json({ error: "Error in query" });
+      return res.json({ error: "Error in query" });
     }
     return res.json(result);
-});
+  });
 });
